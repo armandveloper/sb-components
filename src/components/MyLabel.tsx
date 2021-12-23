@@ -1,6 +1,6 @@
 import './MyLabel.css';
 
-interface Props {
+export interface MyLabelProps {
 	/**
 	 * Caps the text
 	 */
@@ -32,7 +32,7 @@ export const MyLabel = ({
 	color = 'primary',
 	label = 'No Label',
 	size = 'normal',
-}: Props) => {
+}: MyLabelProps) => {
 	return (
 		<span
 			className={`label text-${color} ${size} ${allCaps ? 'uppercase' : ''}`}
